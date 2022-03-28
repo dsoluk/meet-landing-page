@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
   
@@ -16,8 +16,8 @@
 </head>
 <body>
   <section class="masthead">
-    <img src="assets/logo.svg" alt="Meet Logo" style="width:119px;height:28px;">
-    <picture>
+    <img class="logo" src="assets/logo.svg" alt="Meet Logo" style="width:119px;height:28px;">
+    <picture class="masthead-pic">
       <source media="(min-width:992px)" srcset="assets/desktop/image-hero-left.png">
       <!-- <source media="(min-width:992px)" srcset="assets/desktop/image-hero-right.png"> Will this work??? -->
       <source media="(min-width:600px)" srcset="assets/tablet/image-hero.png">
@@ -27,16 +27,18 @@
       <h1>Group Chat for Everyone</h1>
       <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
       <div class="button-group-top">
-        <button>Download v1.3</button>
-        <button>What is it?</button>
+        <button class="button1">
+          <span style="color: #ffffff;">Download</span>
+          <span style="color: #8fe3f9;"> v1.3</span>
+        </button>
+        <button class="button2">What is it?</button>
       </div>
     </main>
   </section>
-  <section class="Reason01">
-    <figure>
-      <!-- line -->
-      <!-- circle -->
-      <p>01</p>
+  <section>
+    <figure class="reason01">
+      <div class="vertical-line"></div>
+      <div class="circle"><p>01</p></div>
     </figure>
     <div class="people-pic-grid">
       <img src="assets/desktop/image-woman-in-videocall.jpg" alt="Woman on Video Call">
@@ -53,11 +55,10 @@
   </section>
   <section class="Reason02">
     <figure>
-      <!-- line -->
-      <!-- circle -->
-      <p>02</p>
+      <div class="vertical-line"></div>
+      <div class="circle"><p>02</p></div>
     </figure>
-    <picture>
+    <picture class="footer-pic">
       <source media="(min-width:992px)" srcset="assets/desktop/image-footer.jpg">
       <source media="(min-width:600px)" srcset="assets/tablet/image-footer.jpg">
       <img src="/assets/mobile/image-footer.jpg" alt="woman working">

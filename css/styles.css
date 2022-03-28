@@ -13,4 +13,145 @@ body {
   font-family: "Red Hat Display", sans-serif;
 
   box-sizing: border-box;
+
+  margin: 0;
+
+  max-width: 375px;
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+/* section ~ img { */
+.logo {
+  display: block;
+  margin: 48px auto 64px auto;
+}
+
+.masthead-pic {
+  position: relative;
+  left: -20px;
+}
+
+.reason01 {
+  margin-top: 64px;
+}
+
+h1 {
+  margin: 48px 24px 24px 24px;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 44px;
+  font-weight: 900;
+  text-align: center;
+  color: #28283d;
+}
+
+p {
+  margin: 24px 24px 32px 24px;
+  color: #87879d;
+  text-align: center;
+}
+
+.button-group-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  width: auto;
+  max-width: 193px;
+  height: 58px;
+  border-radius: 100px;
+  background-color: #4d96a9;
+  font-weight: 900;
+  border: none;
+  padding: 0px 20px 0px 20px;
+}
+
+.button2 {
+  width: auto;
+  max-width: 193px;
+  height: 58px;
+  border-radius: 100px;
+  background-color: #855fb1;
+  color: #ffffff;
+  font-weight: 900;
+  border: none;
+  padding: 0px 20px 0px 20px;
+  margin-top: 16px;
+}
+
+.button1:hover {
+  background-color: #71c0d4;
+}
+.button2:hover {
+  background-color: #b18bdd;
+}
+
+.vertical-line {
+  position: relative;
+  border: 1px solid #87879d;
+  height: 84px;
+  width: 0.5px;
+  left: 50%;
+}
+
+.circle {
+  position: relative;
+  border: 1px solid #87879d;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #87879d;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.people-pic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 151px);
+  grid-template-rows: repeat(2, 143px);
+  grid-gap: 25px;
+  margin: 24px;
+}
+
+h3 {
+  margin: 64px 24px 24px 24px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4d96a9;
+  text-align: center;
+}
+
+h2 {
+  margin: 24px;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 36px;
+  font-weight: 900;
+  text-align: center;
+  color: #28283d;
+}
+
+picture.footer-pic {
+  /* position: relative; */
+  /* height: 540px; */
+  /* background-color: #4d96a9; */
+  background-color: rgba(77, 150, 168, 0.7);
+  background-blend-mode: multiply;
 }
