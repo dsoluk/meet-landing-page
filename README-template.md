@@ -61,7 +61,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Things I did differently on this challenge:
+
+- put basic styles (e.g. margin, color) for various elements in the element rather than styles.css file...curious if this good practice?
+- used flexbox for centering images and text
+- used picture elements to load certain images based on device...thinking this should be based on viewport rather than device?
 
 To see how you can add code snippets, see below:
 
