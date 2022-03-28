@@ -16,7 +16,7 @@ body {
 
   margin: 0;
 
-  max-width: 375px;
+  width: 375px;
 }
 
 figure,
@@ -24,7 +24,6 @@ p {
   margin: 0;
 }
 
-/* section ~ img { */
 .logo {
   display: block;
   margin: 48px auto 64px auto;
@@ -93,8 +92,13 @@ p {
   background-color: #b18bdd;
 }
 
+.reason01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .vertical-line {
-  position: relative;
   border: 1px solid #87879d;
   height: 84px;
   width: 0.5px;
@@ -102,20 +106,17 @@ p {
 }
 
 .circle {
-  position: relative;
   border: 1px solid #87879d;
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #87879d;
   font-style: normal;
   font-weight: 900;
   font-size: 16px;
   line-height: 26px;
+  background-color: #ffffff;
+  z-index: 3;
 }
 
 .people-pic-grid {
@@ -123,7 +124,7 @@ p {
   grid-template-columns: repeat(2, 151px);
   grid-template-rows: repeat(2, 143px);
   grid-gap: 25px;
-  margin: 24px;
+  /* margin: 24px; */
 }
 
 h3 {
@@ -148,10 +149,31 @@ h2 {
   color: #28283d;
 }
 
-picture.footer-pic {
-  /* position: relative; */
-  /* height: 540px; */
-  /* background-color: #4d96a9; */
-  background-color: rgba(77, 150, 168, 0.7);
-  background-blend-mode: multiply;
+.reason02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-pic-box {
+  background-color: rgba(77, 150, 168, 1);
+  background-blend-mode: darken;
+}
+
+img.woman-working-pic {
+  opacity: 0.2;
+}
+
+.footer-pic-box {
+  position: relative;
+}
+
+.desc-02 {
+  position: absolute;
+  top: 0;
+}
+
+.button-group-bottom {
+  text-align: center;
 }

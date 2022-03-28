@@ -19,7 +19,6 @@
     <img class="logo" src="assets/logo.svg" alt="Meet Logo" style="width:119px;height:28px;">
     <picture class="masthead-pic">
       <source media="(min-width:992px)" srcset="assets/desktop/image-hero-left.png">
-      <!-- <source media="(min-width:992px)" srcset="assets/desktop/image-hero-right.png"> Will this work??? -->
       <source media="(min-width:600px)" srcset="assets/tablet/image-hero.png">
       <img src="assets/tablet/image-hero.png" alt="Hero" style="width:414px;">
     </picture>
@@ -38,34 +37,47 @@
   <section>
     <figure class="reason01">
       <div class="vertical-line"></div>
-      <div class="circle"><p>01</p></div>
+      <div class="circle">
+        <p class="circle-text" style="margin: 15px 17.5px">01</p>
+      </div>
     </figure>
-    <div class="people-pic-grid">
+    <div class="people-pic-grid" style="margin:64px 24px;">
       <img src="assets/desktop/image-woman-in-videocall.jpg" alt="Woman on Video Call">
       <img src="assets/desktop/image-women-videochatting.jpg" alt="Women Video Chatting">
       <img src="assets/desktop/image-men-in-meeting.jpg" alt="Men in Meeting">
       <img src="assets/desktop/image-man-texting.jpg" alt="Man texting">
     </div>
-    <div class="01-desc">
+    <div class="desc-01">
       <h3>Built for modern use</h3>
       <h2>Smarter meetings, all in one place</h2>
       <p>Send messages, share files, show your screen, and record your meetings — all in one 
         workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
     </div>
   </section>
-  <section class="Reason02">
-    <figure>
+  <footer style="margin: 64px 0px">
+    <figure class="reason02"style="margin: 24px 24px -26px 24px">
       <div class="vertical-line"></div>
-      <div class="circle"><p>02</p></div>
+      <div class="circle">
+        <p class="circle-text" style="margin: 15px 17.5px">02</p>
+      </div>
     </figure>
-    <picture class="footer-pic">
-      <source media="(min-width:992px)" srcset="assets/desktop/image-footer.jpg">
-      <source media="(min-width:600px)" srcset="assets/tablet/image-footer.jpg">
-      <img src="/assets/mobile/image-footer.jpg" alt="woman working">
-    </picture>
-    <h2>Experience more together</h2>
-    <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <button>Download v1.3</button>
-  </section>
+    <div class="footer-pic-box">
+      <picture class="footer-pic">
+        <source media="(min-width:992px)" srcset="assets/desktop/image-footer.jpg">
+        <source media="(min-width:600px)" srcset="assets/tablet/image-footer.jpg">
+        <img class="woman-working-pic" src="/assets/mobile/image-footer.jpg" alt="woman working">
+      </picture>
+      <div class="desc-02">
+        <h2 style="color:#ffffff; margin-top:64px">Experience more together</h2>
+        <p style="color:#ffffff;">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+        <div class="button-group-bottom">
+          <button class="button2">
+            <span style="color: #ffffff;">Download</span>
+            <span style="color: #D9B8FF;"> v1.3</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
