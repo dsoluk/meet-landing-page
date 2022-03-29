@@ -19,23 +19,16 @@ body {
   width: 375px;
 }
 
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    width: 768px;
+  }
+}
+
 figure,
 p {
   margin: 0;
-}
-
-.logo {
-  display: block;
-  margin: 48px auto 64px auto;
-}
-
-.masthead-pic {
-  position: relative;
-  left: -20px;
-}
-
-.reason01 {
-  margin-top: 64px;
 }
 
 h1 {
@@ -48,17 +41,174 @@ h1 {
   color: #28283d;
 }
 
+/* @media screen and (min-width: 768px) {
+  h1 {
+
+  }} */
+
+h2 {
+  margin: 24px;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 36px;
+  font-weight: 900;
+  text-align: center;
+  color: #28283d;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    margin: 24px 97px 24px 98px;
+  }
+}
+
+h3 {
+  margin: 64px 24px 24px 24px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4d96a9;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    margin: 64px 97px 24px 98px;
+  }
+}
+
 p {
   margin: 24px 24px 32px 24px;
   color: #87879d;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  p {
+    margin: 24px 97px 32px 98px;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 48px auto 64px auto;
+}
+
+/* Masthead Grid
+------------------------------ */
+.masthead-left {
+  grid-area: hero-left;
+  position: relative;
+  left: -20px;
+}
+
+@media screen and (min-width: 768px) {
+  .masthead-left {
+    left: -26px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .masthead-left {
+    left: -32px;
+  }
+}
+
+.masthead-right {
+  grid-area: hero-right;
+  position: relative;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .masthead-right {
+    display: block;
+    right: -26px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .masthead-right {
+    display: block;
+    right: -32px;
+  }
+}
+
+.masthead-main {
+  grid-area: main;
+  width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .masthead-main {
+    width: 457px;
+    height: 262px;
+  }
+}
+
+.masthead-box {
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "hero-left"
+    "main";
+}
+
+@media screen and (min-width: 768px) {
+  .masthead-box {
+    grid-template-columns: 410px 410px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "hero-left hero-right"
+      "main main";
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    justify-items: center;
+    /* column-gap: 32px; */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .masthead-box {
+    grid-template-columns: 410px 457px 410px;
+    grid-template-areas: "hero-left main hero-right";
+  }
+}
+
+/* .masthead-pic {
+  position: relative;
+  left: -20px;
+} */
+
+/* @media screen and (min-width: 768px) {
+  .masthead-pic {
+    left: -26px;
+  }
+} */
+
+.reason01 {
+  margin-top: 64px;
+}
+
 .button-group-top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  height: 164px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-group-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 58px;
+  }
 }
 
 .button1 {
@@ -82,7 +232,7 @@ p {
   font-weight: 900;
   border: none;
   padding: 0px 20px 0px 20px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .button1:hover {
@@ -124,29 +274,17 @@ p {
   grid-template-columns: repeat(2, 151px);
   grid-template-rows: repeat(2, 143px);
   grid-gap: 25px;
-  /* margin: 24px; */
+  margin: 64px 24px;
 }
 
-h3 {
-  margin: 64px 24px 24px 24px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #4d96a9;
-  text-align: center;
-}
-
-h2 {
-  margin: 24px;
-  font-size: 32px;
-  font-style: normal;
-  line-height: 36px;
-  font-weight: 900;
-  text-align: center;
-  color: #28283d;
+@media screen and (min-width: 768px) {
+  .people-pic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 164px);
+    grid-template-rows: auto;
+    grid-gap: 11px;
+    margin: 64px 39px;
+  }
 }
 
 .reason02 {
@@ -171,9 +309,13 @@ img.woman-working-pic {
 
 .desc-02 {
   position: absolute;
-  top: 0;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.button-group-footer {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .desc-02 {
+    top: 92px;
+  }
 }
