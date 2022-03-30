@@ -5,7 +5,8 @@
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -17,12 +18,13 @@ body {
 
   margin: 0;
 
-  max-width: 375px;
+  min-width: 375px;
+  max-width: 390px;
 
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   html,
   body {
     max-width: 768px;
@@ -75,7 +77,7 @@ h2 {
   color: #28283d;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   h2 {
     font-size: 42px;
     line-height: 44px;
@@ -107,7 +109,7 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   p {
     font-size: 18px;
   }
@@ -128,16 +130,16 @@ p {
 ------------------------------ */
 .masthead-box {
   display: grid;
-  grid-template-columns: 375px;
+  grid-template-columns: 100vw;
   grid-template-rows: auto;
   grid-template-areas:
     "hero-left"
     "main";
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .masthead-box {
-    grid-template-columns: 410px 410px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
       "hero-left hero-right"
@@ -148,7 +150,7 @@ p {
 
 @media screen and (min-width: 992px) {
   .masthead-box {
-    grid-template-columns: 410px 540px 410px;
+    grid-template-columns: 1fr 540px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "hero-left main hero-right";
   }
@@ -160,7 +162,7 @@ p {
   left: -20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .masthead-left {
     left: -26px;
   }
@@ -179,7 +181,7 @@ p {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .masthead-right {
     display: block;
     right: -26px;
@@ -203,7 +205,7 @@ p {
   height: 354px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .masthead-main {
     margin: 4.5em 9.5em 4.5em 9.5em;
     height: 262px;
@@ -226,7 +228,7 @@ p {
   height: 132px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .button-group-top {
     display: flex;
     flex-direction: row;
@@ -301,16 +303,16 @@ p {
 
 .people-pic-grid {
   display: grid;
-  grid-template-columns: repeat(2, 151px);
-  grid-template-rows: repeat(2, 143px);
+  grid-template-columns: repeat(2, 1fr); /*151px*/
+  grid-template-rows: repeat(2, 1fr); /*143px*/
   grid-gap: 25px;
   margin: 64px 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .people-pic-grid {
     display: grid;
-    grid-template-columns: repeat(4, 164px);
+    grid-template-columns: repeat(4, 1fr); /*164px*/
     grid-template-rows: auto;
     grid-gap: 11px;
     margin: 64px 39px;
@@ -320,7 +322,7 @@ p {
 @media screen and (min-width: 992px) {
   .people-pic-grid {
     display: grid;
-    grid-template-columns: repeat(4, 255px);
+    grid-template-columns: repeat(4, 1fr); /*255px*/
     grid-template-rows: auto;
     grid-gap: 30px;
     margin: 64px 165px;
@@ -337,7 +339,7 @@ p {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .desc-01 {
     margin-top: 3em;
     width: 573px;
@@ -383,7 +385,7 @@ img.woman-working-pic {
   height: 264px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .desc-02 {
     top: 92px;
   }
