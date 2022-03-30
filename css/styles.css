@@ -19,7 +19,10 @@ body {
   margin: 0;
 
   min-width: 375px;
-  max-width: 390px;
+  width: 100vw;
+
+  max-height: 100%;
+  /* width: 100vw; */
 
   /* overflow: scroll; */
 }
@@ -27,7 +30,7 @@ body {
 @media screen and (min-width: 600px) {
   html,
   body {
-    max-width: 768px;
+    width: 100vw;
   }
 }
 
@@ -130,7 +133,7 @@ p {
 ------------------------------ */
 .masthead-box {
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "hero-left"
@@ -159,7 +162,7 @@ p {
 .masthead-left {
   grid-area: hero-left;
   position: relative;
-  left: -20px;
+  /* left: -20px; */
 }
 
 @media screen and (min-width: 600px) {
@@ -382,12 +385,13 @@ img.woman-working-pic {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 264px;
+  min-height: 264px; /*264px*/
 }
 
 @media screen and (min-width: 600px) {
   .desc-02 {
     top: 92px;
+    height: auto;
   }
 }
 
@@ -396,7 +400,8 @@ img.woman-working-pic {
     top: 116px;
     flex-direction: row;
     justify-content: center;
-    height: 88px;
+    height: auto; /*88px*/
     margin: 0 165px;
+    max-height: 90vh;
   }
 }
