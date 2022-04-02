@@ -5,7 +5,7 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -19,25 +19,21 @@ body {
   margin: 0;
 
   min-width: 375px;
-  width: 100vw;
+  max-width: 100%;
+  /* max-width: 1440px; */
 
-  max-height: 100%;
-  /* width: 100vw; */
-
-  /* overflow: scroll; */
 }
 
 @media screen and (min-width: 600px) {
   html,
   body {
-    width: 100vw;
+    /* max-width: 768px; */
   }
 }
 
 @media screen and (min-width: 992px) {
   html,
   body {
-    max-width: 1440px;
   }
 }
 
@@ -56,6 +52,9 @@ h1 {
   font-weight: 900;
   text-align: center;
   color: #28283d;
+
+  padding: 48px 48px 24px 48px;
+
 }
 
 @media screen and (min-width: 992px) {
@@ -71,6 +70,10 @@ h1 {
   }
 }
 
+/* h1.masthead-box {
+  padding-top: 48px;
+} */
+
 h2 {
   font-size: 32px;
   line-height: 36px;
@@ -84,6 +87,7 @@ h2 {
   h2 {
     font-size: 42px;
     line-height: 44px;
+    padding: 0 50px;
   }
 }
 
@@ -91,6 +95,7 @@ h2 {
   h2 {
     font-size: 42px;
     line-height: 44px;
+    padding: 0 50px;
   }
 }
 
@@ -124,24 +129,30 @@ p {
   }
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   display: block;
   margin: 48px auto 64px auto;
 }
 
-/* Masthead Grid
+/* Masthead Flexbox (Mobile + Tablet) + Grid (Desktop)
 ------------------------------ */
 .masthead-box {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "hero-left"
-    "main";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .masthead-box {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
@@ -149,77 +160,95 @@ p {
       "main main";
     justify-items: center;
   }
-}
+} */
 
 @media screen and (min-width: 992px) {
   .masthead-box {
+    display: grid;
     grid-template-columns: 1fr 540px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "hero-left main hero-right";
   }
 }
 
-.masthead-left {
-  grid-area: hero-left;
-  position: relative;
-  /* left: -20px; */
+.hero-img-box {
+  width: calc(100% + 2.5rem);  /* to spread / shift 20px*/
 }
 
 @media screen and (min-width: 600px) {
-  .masthead-left {
-    left: -26px;
+  .hero-img-box {
+    width: calc(100% + 3.25rem);  /* to spread / shift 26px*/
   }
 }
 
+.masthead-left {
+  position: relative;
+}
+
+/* @media screen and (min-width: 600px) {
+  .masthead-left {
+  grid-area: hero-left;
+
+    left: -26px;
+  }
+} */
+
 @media screen and (min-width: 992px) {
   .masthead-left {
-    left: -32px;
+    grid-area: hero-left;
+    /* left: -32px; */
     top: 0px;
   }
 }
 
 .masthead-right {
-  grid-area: hero-right;
-  position: relative;
+  /* grid-area: hero-right; */
+  /* position: relative; */
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .masthead-right {
     display: block;
     right: -26px;
   }
-}
+} */
 
 @media screen and (min-width: 992px) {
   .masthead-right {
+    grid-area: hero-right;
     display: block;
-    right: -32px;
+    /* right: -32px; */
     top: 24px;
   }
 }
 
-.masthead-main {
-  grid-area: main;
+.masthead-main-text {
   display: flex;
   flex-direction: column;
-  margin: 1.5em;
-  justify-content: space-evenly;
-  height: 354px;
+  /* margin: 1.5em; */
+  justify-content:space-around;
+  /* height: 354px; */
 }
 
 @media screen and (min-width: 600px) {
-  .masthead-main {
-    margin: 4.5em 9.5em 4.5em 9.5em;
-    height: 262px;
+  .masthead-main-text {
+    margin: 0 9.5rem 0 9.5rem;
+    /* height: 262px; */
   }
 }
 
 @media screen and (min-width: 992px) {
-  .masthead-main {
+  .masthead-main-text {
+    grid-area: main;
+
     margin: 0;
-    height: 358px;
+    /* height: 358px; */
   }
+}
+
+p.top-para {
+  padding: 24px;
 }
 
 .button-group-top {
@@ -243,7 +272,7 @@ p {
   .button-group-top {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 
@@ -378,6 +407,11 @@ img.woman-working-pic {
   position: relative;
 }
 
+/* @media screen and (min-width: 600px) {
+  .footer-pic-box {
+    margin: 0 97px;
+  }
+} */
 .desc-02 {
   position: absolute;
   top: 64px;
@@ -386,12 +420,15 @@ img.woman-working-pic {
   align-items: center;
   justify-content: space-around;
   min-height: 264px; /*264px*/
+  
 }
 
 @media screen and (min-width: 600px) {
   .desc-02 {
     top: 92px;
     height: auto;
+    margin: 0 97px;
+
   }
 }
 
@@ -402,6 +439,6 @@ img.woman-working-pic {
     justify-content: center;
     height: auto; /*88px*/
     margin: 0 165px;
-    max-height: 90vh;
+    /* max-height: 90vh; */
   }
 }

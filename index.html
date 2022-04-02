@@ -15,72 +15,81 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-    <img class="logo" src="assets/logo.svg" alt="Meet Logo" style="width:119px;height:28px;">
-    <section class="masthead-box">
-      <picture>
-        <source media="(min-width:768px)" srcset="assets/desktop/image-hero-left.png">
-        <img class="masthead-left" src="assets/tablet/image-hero.png" alt="Hero" style="width:414px;">
-      </picture>
-      <picture>
-        <source media="(min-width:768px)" srcset="assets/desktop/image-hero-right.png">
-        <img class="masthead-right" src="assets/tablet/image-hero.png" alt="Hero" style="width:414px;">
-      </picture>
-      <main class="masthead-main">
-        <h1>Group Chat for Everyone</h1>
-        <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        <div class="button-group-top">
-          <button class="button1">
-            <span style="color: #ffffff;">Download</span>
-            <span style="color: #8fe3f9;"> v1.3</span>
-          </button>
-          <button class="button2">What is it?</button>
+    <main class="main-container">
+
+      <img class="logo" src="assets/logo.svg" alt="Meet Logo" style="width:119px;height:28px;">
+      
+      <section class="masthead-box">
+        <div class="hero-img-box">
+          <picture>
+            <source media="(min-width:992px)" srcset="assets/desktop/image-hero-left.png">
+            <img class="masthead-left" src="assets/tablet/image-hero.png" alt="Hero">
+          </picture>
+          <picture>
+            <source media="(min-width:992px)" srcset="assets/desktop/image-hero-right.png">
+            <img class="masthead-right" src="assets/tablet/image-hero.png" alt="Hero">
+          </picture>
         </div>
-      </main>
-    </section>
-  <section>
-    <figure class="reason01">
-      <div class="vertical-line"></div>
-      <div class="circle">
-        <p class="circle-text" style="margin: 15px 17.5px">01</p>
-      </div>
-    </figure>
-    <div class="people-pic-grid">
-      <img src="assets/desktop/image-woman-in-videocall.jpg" alt="Woman on Video Call">
-      <img src="assets/desktop/image-women-videochatting.jpg" alt="Women Video Chatting">
-      <img src="assets/desktop/image-men-in-meeting.jpg" alt="Men in Meeting">
-      <img src="assets/desktop/image-man-texting.jpg" alt="Man texting">
-    </div>
-    <div class="desc-01">
-      <h3>Built for modern use</h3>
-      <h2>Smarter meetings, all in one place</h2>
-      <p>Send messages, share files, show your screen, and record your meetings — all in one 
-        workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
-    </div>
-  </section>
-  <footer>
-    <figure class="reason02"style="margin: 24px 24px -26px 24px">
-      <div class="vertical-line"></div>
-      <div class="circle">
-        <p class="circle-text" style="margin: 15px 17.5px">02</p>
-      </div>
-    </figure>
-    <div class="footer-pic-box">
-      <picture>
-        <source media="(min-width:992px)" srcset="assets/desktop/image-footer.jpg">
-        <source media="(min-width:600px)" srcset="assets/tablet/image-footer.jpg">
-        <img class="woman-working-pic" src="assets/mobile/image-footer.jpg" alt="woman working">
-      </picture>
-      <div class="desc-02">
-        <h2 style="color:#ffffff;">Experience more together</h2>
-        <p style="color:#ffffff;">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-        <div class="button-group-footer">
-          <button class="button2">
-            <span style="color: #ffffff;">Download</span>
-            <span style="color: #D9B8FF;"> v1.3</span>
-          </button>
+        <div class="masthead-main-text">
+          <h1>Group Chat for Everyone</h1>
+          <p class="top-para">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+          <div class="button-group-top">
+            <button class="button1">
+              <span style="color: #ffffff;">Download</span>
+              <span style="color: #8fe3f9;"> v1.3</span>
+            </button>
+            <button class="button2">What is it?</button>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <figure class="reason01">
+          <div class="vertical-line"></div>
+          <div class="circle">
+            <p class="circle-text" style="margin: 15px 17.5px">01</p>
+          </div>
+        </figure>
+        <div class="people-pic-grid">
+          <img src="assets/desktop/image-woman-in-videocall.jpg" alt="Woman on Video Call">
+          <img src="assets/desktop/image-women-videochatting.jpg" alt="Women Video Chatting">
+          <img src="assets/desktop/image-men-in-meeting.jpg" alt="Men in Meeting">
+          <img src="assets/desktop/image-man-texting.jpg" alt="Man texting">
+        </div>
+        <div class="desc-01">
+          <h3>Built for modern use</h3>
+          <h2>Smarter meetings, all in one place</h2>
+          <p>Send messages, share files, show your screen, and record your meetings — all in one 
+            workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <figure class="reason02"style="margin: 24px 24px -26px 24px">
+        <div class="vertical-line"></div>
+        <div class="circle">
+          <p class="circle-text" style="margin: 15px 17.5px">02</p>
+        </div>
+      </figure>
+      <div class="footer-pic-box">
+        <picture>
+          <source media="(min-width:992px)" srcset="assets/desktop/image-footer.jpg">
+          <source media="(min-width:600px)" srcset="assets/tablet/image-footer.jpg">
+          <img class="woman-working-pic" src="assets/mobile/image-footer.jpg" alt="woman working">
+        </picture>
+        <div class="desc-02">
+          <h2 style="color:#ffffff;">Experience more together</h2>
+          <p style="color:#ffffff;">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+          <div class="button-group-footer">
+            <button class="button2">
+              <span style="color: #ffffff;">Download</span>
+              <span style="color: #D9B8FF;"> v1.3</span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
   </footer>
 </body>
 </html>
