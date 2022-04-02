@@ -148,6 +148,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: calc(100% + 2.5rem); /* to spread / shift 20px*/
+
 }
 
 /* @media screen and (min-width: 600px) {
@@ -162,24 +165,24 @@ p {
   }
 } */
 
+@media screen and (min-width: 600px) {
+  .masthead-box {
+    width: calc(100% + 3.25rem);  /* to spread / shift 26px*/
+  }
+}
+
 @media screen and (min-width: 992px) {
   .masthead-box {
     display: grid;
     grid-template-columns: 1fr 540px 1fr;
     grid-template-rows: auto;
     grid-template-areas: "hero-left main hero-right";
+
+    width: calc(100% + 4rem);  /* to spread / shift 32px*/
+
   }
 }
 
-.hero-img-box {
-  width: calc(100% + 2.5rem);  /* to spread / shift 20px*/
-}
-
-@media screen and (min-width: 600px) {
-  .hero-img-box {
-    width: calc(100% + 3.25rem);  /* to spread / shift 26px*/
-  }
-}
 
 .masthead-left {
   position: relative;
@@ -218,17 +221,14 @@ p {
   .masthead-right {
     grid-area: hero-right;
     display: block;
-    /* right: -32px; */
-    top: 24px;
+    margin-top: 2rem;
   }
 }
 
 .masthead-main-text {
   display: flex;
   flex-direction: column;
-  /* margin: 1.5em; */
   justify-content:space-around;
-  /* height: 354px; */
 }
 
 @media screen and (min-width: 600px) {
@@ -277,24 +277,24 @@ p.top-para {
 }
 
 .button1 {
-  width: auto;
+  width: 193px;
   height: 58px;
   border-radius: 100px;
   background-color: #4d96a9;
   font-weight: 900;
   border: none;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 24px 0px 24px;
 }
 
 .button2 {
-  width: auto;
+  width: 193px;
   height: 58px;
   border-radius: 100px;
   background-color: #855fb1;
   color: #ffffff;
   font-weight: 900;
   border: none;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 24px 0px 24px;
 }
 
 .button1:hover {
@@ -434,11 +434,15 @@ img.woman-working-pic {
 
 @media screen and (min-width: 992px) {
   .desc-02 {
-    top: 116px;
+    top: 0;
     flex-direction: row;
     justify-content: center;
-    height: auto; /*88px*/
+
+    height: 100%; /*88px*/
     margin: 0 165px;
-    /* max-height: 90vh; */
+  }
+
+  .desc-02 p {
+    padding: 0 12px;
   }
 }
