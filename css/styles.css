@@ -19,22 +19,8 @@ body {
   margin: 0;
 
   min-width: 375px;
-  max-width: 100%;
-  /* max-width: 1440px; */
+  max-width: 1440px;
 
-}
-
-@media screen and (min-width: 600px) {
-  html,
-  body {
-    /* max-width: 768px; */
-  }
-}
-
-@media screen and (min-width: 992px) {
-  html,
-  body {
-  }
 }
 
 figure,
@@ -69,10 +55,6 @@ h1 {
     font-size: 64px;
   }
 }
-
-/* h1.masthead-box {
-  padding-top: 48px;
-} */
 
 h2 {
   font-size: 32px;
@@ -153,18 +135,6 @@ p {
 
 }
 
-/* @media screen and (min-width: 600px) {
-  .masthead-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "hero-left hero-right"
-      "main main";
-    justify-items: center;
-  }
-} */
-
 @media screen and (min-width: 600px) {
   .masthead-box {
     width: calc(100% + 3.25rem);  /* to spread / shift 26px*/
@@ -183,39 +153,20 @@ p {
   }
 }
 
-
 .masthead-left {
   position: relative;
 }
 
-/* @media screen and (min-width: 600px) {
-  .masthead-left {
-  grid-area: hero-left;
-
-    left: -26px;
-  }
-} */
-
 @media screen and (min-width: 992px) {
   .masthead-left {
     grid-area: hero-left;
-    /* left: -32px; */
     top: 0px;
   }
 }
 
 .masthead-right {
-  /* grid-area: hero-right; */
-  /* position: relative; */
   display: none;
 }
-
-/* @media screen and (min-width: 600px) {
-  .masthead-right {
-    display: block;
-    right: -26px;
-  }
-} */
 
 @media screen and (min-width: 992px) {
   .masthead-right {
@@ -234,7 +185,6 @@ p {
 @media screen and (min-width: 600px) {
   .masthead-main-text {
     margin: 0 9.5rem 0 9.5rem;
-    /* height: 262px; */
   }
 }
 
@@ -243,7 +193,6 @@ p {
     grid-area: main;
 
     margin: 0;
-    /* height: 358px; */
   }
 }
 
@@ -407,11 +356,6 @@ img.woman-working-pic {
   position: relative;
 }
 
-/* @media screen and (min-width: 600px) {
-  .footer-pic-box {
-    margin: 0 97px;
-  }
-} */
 .desc-02 {
   position: absolute;
   top: 64px;
